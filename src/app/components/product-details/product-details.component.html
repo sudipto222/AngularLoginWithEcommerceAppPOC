@@ -1,4 +1,14 @@
 <div class="container">
+  <button
+          class="btn"
+          color="primary"
+          mat-raised-button
+          (click)="goToProductsPage()"
+        >
+          Go to products
+        </button>
+        <br>
+        <br>
   <div class="detail-card" *ngIf="productDetails">
     <mat-card class="example-card">
       <img

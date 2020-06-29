@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from 'src/app/shared/services/data.service';
 import { Product } from 'src/app/shared/models/product';
 
@@ -12,7 +12,8 @@ export class ProductDetailsComponent implements OnInit {
   productDetails: Product;
   constructor(
     private route: ActivatedRoute,
-    private dataService: DataService
+    private dataService: DataService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -31,5 +32,9 @@ export class ProductDetailsComponent implements OnInit {
       this.productDetails = product;
       console.log(this.productDetails);
     });
+  }
+
+  goToProductsPage(){
+    this.router.navigate(['/products']);
   }
 }
