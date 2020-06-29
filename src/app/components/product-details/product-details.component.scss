@@ -1,0 +1,14 @@
+.container{
+    width: 70%;
+    margin: 100px auto;
+    mat-card{
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    .status-danger{
+        color: red
+    }
+    .status-success{
+        color: green
+    }
+}

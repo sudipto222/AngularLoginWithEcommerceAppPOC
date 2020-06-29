@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="detail-card" *ngIf="productDetails">
+    <mat-card class="example-card">
+      <img
+        mat-card-image
+        src="{{ productDetails.url }}"
+        alt="Photo of a Shiba Inu"
+      />
+      <mat-card-content>
+        <mat-card-title>{{ productDetails.name }}</mat-card-title>
+        <mat-card-subtitle>${{ productDetails.price }}</mat-card-subtitle>
+        <p>{{ productDetails.description }}</p>
+        <span [ngSwitch]="">
+          <p></p>
+          <p></p>
+        </span>
+        <div [ngSwitch]="productDetails.status">
+          <span class="status-success" *ngSwitchCase="'Available'">
+            {{ productDetails.status }}
+          </span>
+          <span class="status-danger" *ngSwitchCase="'Out of stock'">
+            {{ productDetails.status }}
+          </span>
+          <span *ngSwitchDefault> </span>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 40%;
+    .logo{
+        text-align: center !important;
+        img{
+            width: 130px;
+            height: 130px;
+        }
+    }
+    form {
+      width: 100%;
+      mat-form-field {
+        display: block;
+      }
+      .action {
+        text-align: right !important;
+      }
+      button.submit-btn {
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="card">
+    <mat-card>
+        <div class="logo">
+            <img src="../../../assets/images/user.png" alt="">
+        </div>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+        <mat-form-field class="full-width">
+          <input
+            matInput
+            type="text"
+            placeholder="User ID"
+            formControlName="userId"
+            required
+          />
+          <mat-error
+            class="error-message"
+            *ngIf="
+              loginForm.get('userId').dirty || loginForm.get('userId').touched
+            "
+            >This field is required</mat-error
+          >
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <input
+            matInput
+            type="password"
+            placeholder="Password"
+            formControlName="password"
+            required
+          />
+          <mat-error
+            class="error-message"
+            *ngIf="
+              loginForm.get('password').dirty ||
+              loginForm.get('password').touched
+            "
+            >Required & Length Must be 8 Characters</mat-error
+          >
+        </mat-form-field>
+
+        <div class="action">
+          <button
+            class="submit-btn"
+            color="primary"
+            mat-raised-button
+            type="submit"
+            [disabled]="!loginForm.valid"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+</div>

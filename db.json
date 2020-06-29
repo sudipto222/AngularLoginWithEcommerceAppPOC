@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Ear Budds",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "status": "Available",
+      "url": "https://static-01.daraz.pk/p/438f0f3539dfaa5270bce5cb3a0a9e94.jpg_720x720q80.jpg_.webp",
+      "price": "20.00"
+    },
+    {
+        "id": 2,
+        "name": "Product Name",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "status": "Out of stock",
+        "url": "https://static-01.daraz.pk/p/438f0f3539dfaa5270bce5cb3a0a9e94.jpg_720x720q80.jpg_.webp",
+        "price": "30.00"
+      }
+
+  ]
+}

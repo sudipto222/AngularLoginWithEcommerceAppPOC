@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="product-card" *ngFor="let product of productsList">
+    <mat-card>
+      <mat-card-title> {{ product.name }}</mat-card-title>
+      <mat-card-content>
+        <mat-card-subtitle> Price: ${{ product.price }}</mat-card-subtitle>
+        <button
+          class="btn"
+          color="primary"
+          mat-raised-button
+          (click)="productDetails(product.id)"
+        >
+          Details
+        </button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
