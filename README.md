@@ -33,3 +33,5 @@ npm install -g json-server
 ##Run local json server
 
 npm run json:server
+
+##Run npm install
